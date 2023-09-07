@@ -5,6 +5,9 @@ const destinySchema = new mongoose.Schema(
         id: {type: String},
         name: {type: String},
         description: {type: String}
+    },
+    {
+        versionKey: false
     }
 )
 

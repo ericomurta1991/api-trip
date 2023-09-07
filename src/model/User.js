@@ -11,6 +11,9 @@ const userSchema = new mongoose.Schema(
         number_adress: {type: String, require: true},
         city: {type: String, require:true},
         state: {type: String, require: true}
+    },
+    {
+        versionKey: false
     }
 )
 

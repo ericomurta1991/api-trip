@@ -8,6 +8,9 @@ const reserveSchema = new mongoose.Schema(
         date: {type: Date},
         status: {type: String} 
 
+    },
+    {
+        versionKey: false
     }
 )
 
