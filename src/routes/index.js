@@ -1,6 +1,7 @@
 import express from "express";
 import  users from "../routes/user.Routes.js"
 import destinations from "../routes/destiny.Routes.js";
+import reservations from "../routes/reserve.Routes.js";
 
 
 const routes = (app) => {
@@ -12,6 +13,7 @@ const routes = (app) => {
         express.json(),
         users,
         destinations,
+        reservations,
     );
 };
 
