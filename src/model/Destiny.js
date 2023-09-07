@@ -1,6 +1,6 @@
 import mongoose, { mongo } from "mongoose";
 
-const destinySchema = new mongoose(
+const destinySchema = new mongoose.Schema(
     {
         id: {type: String},
         name: {type: String},
@@ -9,3 +9,4 @@ const destinySchema = new mongoose(
 )
 
 const destinations = mongoose.model("destinations", destinySchema);
+export default destinations;
